@@ -11,6 +11,10 @@ body {
     text-align: center; 
 }
 
+header img {
+    margin-top: 10px;
+}
+
 h1, h2, h3 {
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
@@ -98,4 +102,42 @@ span {
     font-weight: bold;
     text-decoration: none;
     display: block;
+}
+
+/* super bonus */
+
+/* Pour rajouter un effet de style au survol du lien j'utilise la pseudo-class hover : https://developer.mozilla.org/fr/docs/Web/CSS/:hover */
+
+#produits a:hover {
+    background-color: #bbbbbb;
+    color: #ff0000;
+}
+
+#images {
+    background-color:white;
+}
+
+#images article {
+    width: 28%;
+    margin: 15px auto;
+    border: 1px solid black;
+    padding : 10px;
+    /* pour afficher tous les blocs sur une ligne une des solutions est de changer leur prorpriété display: inline-block; */
+}
+
+#images img {
+    width: 100%;
+}
+
+#images h2, h3 {
+    padding: 20px;
+}
+
+#images p {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+#flex {
+    display: flex;
 }
